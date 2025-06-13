@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "title": "Festival Opening",
+      "description": "June 12, 2025, 18:00 – Virtual Screening Room"
+    },
+    {
+      "id": 2,
+      "title": "Short Film Showcase",
+      "description": "June 13, 2025, 19:00 – Screening Room A"
+    },
+    {
+      "id": 3,
+      "title": "Documentary Block",
+      "description": "June 14, 2025, 17:00 – Screening Room B"
+    },
+    {
+      "id": 4,
+      "title": "Panel Discussion: The Future of Student Cinema",
+      "description": "June 14, 2025, 19:00 – Live Q&A"
+    },
+    {
+      "id": 5,
+      "title": "Audience Choice Voting Closes",
+      "description": "June 15, 2025, 21:00 – Voting Portal"
+    }
+  ]
+  

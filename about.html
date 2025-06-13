@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Student Film Fest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Film Fest 2025</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>About the Festival</h2>
+      <p>
+        Student Film Fest is an online event celebrating the creativity of student filmmakers. We aim to give young voices a platform to shine.
+      </p>
+
+      <h2>Our Team</h3>
+      <ul class="team-list">
+        <li>Jane Doe – Director</li>
+        <li>Alex Smith – Technical Lead</li>
+        <li>Maria Gonzalez – Program Coordinator</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© MANS University</p>
+  </footer>
+  <script>
+    const currentPath = window.location.pathname.split('/').pop(); // имя файла страницы, например, "about.html"
+    const navLinks = document.querySelectorAll('nav a');
+  
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === currentPath || (href === 'index.html' && currentPath === '')) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  
+</body>
+</html>
