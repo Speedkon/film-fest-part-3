@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header role="banner">
     <h1>Film Fest 2025</h1>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -18,7 +19,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main" role="main">
     <div class="wrap">
         <section id="hero">
             <h2>Welcome to the Student Film Fest!</h2>
@@ -28,13 +29,13 @@
       
           <section id="program" class="container">
             <h2>Festival Schedule</h2>
-            <div id="post-list"></div>
+            <div id="post-list" role="list" aria-live="polite"></div>
           </section>
           
     </div>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>© MANS University</p>
   </footer>
   <script type="module" src="js/main.js"></script>

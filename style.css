@@ -11,6 +11,19 @@
   --dairy: #FCFCFC;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
+
+:focus {
+  outline: 2px solid #ffcc00;
+  outline-offset: 2px;
+}
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background: var(--white-color);
@@ -20,6 +33,24 @@ body {
     padding: 0;
     height: 100%;
   }
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+  }
+
   p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -69,6 +100,9 @@ body {
   #hero h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+  }
+  #hero p {
+    color: var(--plum-dark);
   }
   
   #hero .button {

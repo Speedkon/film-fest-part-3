@@ -4,6 +4,7 @@ export function renderPosts(posts) {
   
     posts.forEach(post => {
       const article = document.createElement('article');
+      article.setAttribute('role', 'listitem');
       const title = document.createElement('h3');
       const desc = document.createElement('p');
   
